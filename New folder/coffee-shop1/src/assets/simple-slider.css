@@ -1,0 +1,62 @@
+.sss {
+	height: 0;
+	margin: 0; 
+	padding: 0;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+.ssslide {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+}
+
+.ssslide img {
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: block;
+}
+
+.sssnext, .sssprev {
+	width: 30px;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	background: url('./logo.png') no-repeat;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	opacity: 0;
+}
+
+.sss:hover .sssnext,
+.sss:hover .sssprev {
+	opacity: 1;
+}
+
+.sssprev {
+	left: 0;
+	background-position: 0 50%;
+}
+
+.sssnext {
+	right: 0;
+	background-position: -30px 50%;
+}
+
+.sssprev:hover, .sssnext:hover {
+	cursor: pointer;
+}
